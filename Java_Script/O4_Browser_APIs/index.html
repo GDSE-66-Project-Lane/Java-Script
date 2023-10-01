@@ -18,6 +18,23 @@
 
 <script>
     //So let's check it out.!
+    //Timer is a concept that we can use to execute a process repeatedly
+    //over a time period
+
+    //will wait 2000ms and then recursively call the process everytime it completes 2000ms
+    let count=0;
+    setInterval(function(){
+        count+=1;
+        console.log(count);
+    },2000);
+
+    // setInterval(function(){},2000);//repeatedly
+
+
+    //wait 2000 ms and then will invoke the process only one time
+    setTimeout(function(){
+        console.log("Hello");
+    },2000);
 
 </script>
 </body>
