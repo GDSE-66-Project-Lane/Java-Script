@@ -52,7 +52,11 @@ btn.addEventListener("click",function (){
     li.textContent=typInp;
 
     //append() // to add child element to any parent element
-    ol.append(li);//added newly created list to the selected ol
+    ol.prepend(li);//added newly created list to the selected ol
+    //added newly created list to the selected ol
+
+    // append();//add to the last
+    // prepend();//add to the top
 
 });
 
