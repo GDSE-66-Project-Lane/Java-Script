@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>Task One</title>
     <link rel="stylesheet" href="../../asets/css/bootstrap.css">
+    <style>
+        div{
+            background-repeat: no-repeat;
+            background: url("");
+        }
+    </style>
 </head>
 <body>
 <section class="container mt-3">
@@ -47,10 +53,16 @@
     //Get Input URL Value
     //Assign it to the Image src
     //https://www.ijse.lk/images/logos/ijse.png
+    //https://www.coursenet.lk/Content/courses/22856/690921520190407.png
 
     document.querySelector("#btn2").addEventListener('click',function(){
-        document.querySelector("#url").value;
-        document.querySelector("#img").style.background='url("")';
+        var typeValue=document.querySelector("#url").value;
+        var divContainer=document.querySelector("#img");
+
+        divContainer.style.background=`url(${typeValue})`;
+        divContainer.style.backgroundPosition='center';
+        divContainer.style.backgroundSize='contain';
+        divContainer.style.backgroundRepeat='no-repeat';
     })
 
 
