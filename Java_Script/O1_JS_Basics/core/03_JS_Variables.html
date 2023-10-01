@@ -98,11 +98,16 @@
     //========================
     //let declaration type
     let myID="C001";
+    typeof  myID;//string
+
+    myID=true;//will dynamically change to boolean
+    typeof myID;//boolean
+
 
     {
         let myState=true;
     }
-    console.log(myState);//error (let satisfied the scope)
+    //console.log(myState);//error (let satisfied the scope)
 
     //what are the qualities with let variables?
     //01. Loose Typing : True
