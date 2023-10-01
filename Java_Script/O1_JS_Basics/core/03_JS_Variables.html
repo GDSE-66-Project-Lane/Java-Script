@@ -82,18 +82,37 @@
     var i=100;//initialize
 
     //what are the qualities with var variables?
-    //01. Loose Typing
-    //02. Dynamic Typing
-    //03. Not care about scope
-    //04. Variable hoisting
+    //01. Loose Typing : Yes
+    //02. Dynamic Typing : Yes
+    //03. Not care about scope : Yes
+    //04. Variable hoisting : Yes
 
     //Var issues
-    //01.Can duplicate same variable name
-    //02.Not care about scope
+    //01.Can duplicate same variable name : Yes
+    //02.Not care about scope : Yes
 
+    //So because there are so many issues with var, then we have another options
+    //variable to create variables in JS
 
+    //LET (Declaration Type)
+    //========================
     //let declaration type
     let myID="C001";
+
+    {
+        let myState=true;
+    }
+    console.log(myState);//error (let satisfied the scope)
+
+    //what are the qualities with let variables?
+    //01. Loose Typing : True
+    //02. Dynamic Typing : True
+    //03. Not care about scope : No : Let variables think about the scope
+    //04. Variable hoisting :
+
+    //Var issues
+    //01.Can duplicate same variable name :
+    //02.Not care about scope:
 
 
 
