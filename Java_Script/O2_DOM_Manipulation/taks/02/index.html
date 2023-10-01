@@ -17,6 +17,7 @@
        <div class="offset-1 col-3 shadow overflow-x-hidden" style="height: 70vh">
            <ol id="list" class="list-group p-2">
                <li class="list-group-item">Task One</li>
+
            </ol>
        </div>
    </div>
@@ -29,6 +30,31 @@
 //Get Input Text Value
 //Create a list element
 //Add it to the Ordered List
+
+let btn=document.querySelector("#btn");
+let ol=document.querySelector("#list");
+
+btn.addEventListener("click",function (){
+    let typInp=document.querySelector("#txt").value;
+
+    //We have to create a li element dynamically and add it the
+    //the above ol list
+    //<li class="list-group-item">Task Two</li>
+
+    //let's create new list item
+    let li=document.createElement("li");
+
+    //if there are any classes which we want to add to the li element,
+    // we can add it as the following way
+    li.setAttribute("class","list-group-item");
+
+    //set input filed typed text task to the list
+    li.textContent=typInp;
+
+    //append() // to add child element to any parent element
+    ol.append(li);//added newly created list to the selected ol
+
+});
 
 
 </script>
