@@ -42,14 +42,34 @@
     //because there is no type defined while creating a variable
     //js is known as Loose Type language
 
+
+
     //Dynamic Typing
     var address="Galle";
     typeof address;//string
 
-    address=100;//we can chanage it as we like
+    address=100;//we can change it as we like
     typeof address;//number -it will change dynamically to a number type
 
+    address=true;//we can change it as we like
+    typeof address;//boolean -it will change dynamically to a boolean type
     //because of this reason js is known as a dynamic type language
+
+
+    //Scope Issue with var
+    var age=100; //global variable
+    {
+        console.log(age);// working
+    }
+
+
+    {
+        //local scope
+        var tp=1199;
+    }
+    console.log(tp);//normally should be an error
+    //but in js no issue at all. you can access var variables outside the scope
+    //var is not satisfying scopes
 
 
 </script>
