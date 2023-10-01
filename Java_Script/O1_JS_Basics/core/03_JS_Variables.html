@@ -56,11 +56,13 @@
     //because of this reason js is known as a dynamic type language
 
 
+
     //Scope Issue with var
     var age=100; //global variable
     {
         console.log(age);// working
     }
+
 
 
     {
@@ -71,6 +73,13 @@
     //but in js no issue at all. you can access var variables outside the scope
     //var is not satisfying scopes
 
+
+
+    //variable hoisting
+    console.log(i);//we can use variables which can be later initialized, this is not an error
+    //according to the js, it's feature called hoisting
+
+    var i=100;//initialize
 
 </script>
 </body>
