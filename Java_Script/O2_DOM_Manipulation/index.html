@@ -30,8 +30,13 @@
     document.querySelectorAll("css_selector");//will return a list
 
 
-    //Select first h1 and change the color into green
+    //Select first h1 and change the color into green using CSSOM
     document.querySelector("#h1ID").style.color='green';
+
+    //Change the position using the CSSOM
+    document.querySelector("#h1ID").style.position='relative';
+    document.querySelector("#h1ID").style.left='100px';
+    document.querySelector("#h1ID").style.top='10px';
 
 
 
