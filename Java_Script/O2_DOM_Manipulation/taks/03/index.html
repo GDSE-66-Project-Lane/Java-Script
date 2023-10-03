@@ -29,19 +29,22 @@
 
     let startBtn=document.querySelector("#btnStart");
     let display=document.querySelector("#display");
-
+    let btnStop=document.querySelector("#btnStop");
+    let timerID;
 
     startBtn.addEventListener("click",function (){
-
         //let's set a timer
-        //should start increment
-        setInterval(function(){
+        timerID=  setInterval(function(){
+            //should start increment
             display.innerText=parseInt(display.innerText)+1;
         },100);
-
-
     });
 
+
+    btnStop.addEventListener("click",function (){
+        clearInterval(timerID);
+    })
+;
 
 
 </script>
