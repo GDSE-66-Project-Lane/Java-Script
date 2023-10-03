@@ -139,8 +139,15 @@
     var customer={
         name:"Dasun",
         age:100,
-        state:false
+        state:false,
+        colors:['red','green'],
+        printMyName:function(){
+            console.log("My Name is"+this.name);
+        }
     }
+
+    customer.printMyName();
+    console.log(customer.colors[0]);
 
     //how to access values in an object
     // there are two ways to do that
