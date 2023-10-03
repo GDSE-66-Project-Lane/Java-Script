@@ -23,10 +23,11 @@
             border: 1px solid black;
         }
 
-        section>div:first-child{
+        section > div:first-child {
             align-self: start;
         }
-        section>div:last-child{
+
+        section > div:last-child {
             align-self: end;
         }
     </style>
@@ -34,16 +35,24 @@
 <body>
 
 <section>
-    <div style="background: blue"></div>
-    <div style="background: red"></div>
-    <div style="background: green"></div>
-    <div style="background: orange"></div>
-    <div style="background: deeppink"></div>
-    <div style="background: yellow"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
 </section>
 
 <script>
 
+    //colors (store 6 colors in a array)
+    let colors = ['red', 'green', 'orange', 'yellow', 'deeppink', 'blue'];
+    let divs = document.querySelectorAll("section>div");
+    //set those colors to the 6 div
+
+    for (let i = 0; i < colors.length; i++) {
+        divs[i].style.background=colors[i];
+    }
 
 
 </script>
