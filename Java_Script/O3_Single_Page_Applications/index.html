@@ -131,7 +131,6 @@
     </section>
 </main>
 
-
 <!--item content-->
 <main class="container-fluid" id="itemContent">
     <section class="row">
@@ -185,7 +184,6 @@
     </section>
 
 </main>
-
 
 <!--order form-->
 <main class="container-fluid" id="orderContent">
@@ -387,7 +385,6 @@
     </div>
 </main>
 
-
 <script src="assets/js/bootstrap.min.js"></script>
 
 <script>
@@ -403,10 +400,12 @@
     let lnkItem = document.querySelector("#lnkItem");
     let lnkOrder = document.querySelector("#lnkOrders");
 
+    //hide all the 4 content sections and display only dashboard
     dash.style.display = 'block';
     customer.style.display = 'none';
     item.style.display = 'none';
     order.style.display = 'none';
+
 
     lnkHome.addEventListener("click",function (){
         dash.style.display = 'block';
@@ -415,6 +414,7 @@
         order.style.display = 'none';
     })
 
+
     lnkCustomer.addEventListener("click",function (){
         dash.style.display = 'none';
         customer.style.display = 'block';
@@ -422,12 +422,14 @@
         order.style.display = 'none';
     })
 
+
     lnkItem.addEventListener("click",function (){
         dash.style.display = 'none';
         customer.style.display = 'none';
         item.style.display = 'block';
         order.style.display = 'none';
     })
+
 
     lnkOrder.addEventListener("click",function (){
         dash.style.display = 'none';
@@ -437,6 +439,27 @@
     })
 
 
+
+
+    //Customer Mange
+   let btnSave= document.querySelector("#btnCustomer");
+
+    //select 4 text fields
+    let txtID=document.querySelector("#txtCustomerID");
+    let txtName=document.querySelector("#txtCustomerName");
+    let txtAddress=document.querySelector("#txtCustomerAddress");
+    let txtSalary=document.querySelector("#txtCustomerSalary");
+
+    var customers=[];
+
+    btnSave.addEventListener("click",function (){
+        txtID.value;
+        txtName.value;
+        txtAddress.value;
+        txtSalary.value;
+        console.log(txtID.value,txtName.value,txtAddress.value,txtSalary.value);
+
+    });
 
 
 

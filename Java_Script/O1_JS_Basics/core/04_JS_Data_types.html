@@ -67,6 +67,7 @@
     //09.Null
 
 
+
     // Let's Explore One By One
 
     //01.String
@@ -102,11 +103,76 @@
 
 
     //03.Boolean
+    let a=true;
+    let b=false;
+
+
     //04.Undefined
+    //this type can be found on loose type languages
+    var age=100; //age has a type now, it's a number
+    var a;// but a has no data type because a has no assigned value
+    //if we check typeof a, it will be undefined
+    //so undefined is a data type which will represent when there
+    //is no data type defined for a variable
+
+
     //05.Symbol (new)
+    //To generate a unique keys in Objects
+
+
+
     //06.BigInt (new)
+    //Number.MAX_SAFE_INTEGER // 9,007,199,254,740,991
+    //if we are using a larger number than 9,007,199,254,740,991
+    //we can use bigint data type with js
+    //to create a big int you can add n to the end of the number
+    let number=100n; // this will refer the bigInt Data type
+    typeof number; //big int
+
+
+
     //07.Object (Will continue in 09th html file)
+   // let customer= name="Dasun",age:100,state:false
+   //literal base objects
+    //Object is a named value container in js
+    //name =key, property
+    var customer={
+        name:"Dasun",
+        age:100,
+        state:false
+    }
+
+    //how to access values in an object
+    // there are two ways to do that
+    //dot notation
+    console.log(customer.name);
+    console.log(customer.age);
+
+    //bracket notation
+    console.log(customer['name']);
+
+
+    //So what about adding new properties and deleting them
+    //add new value after creating the object
+    customer.salary=1100;
+
+    //delete existing value
+    delete customer.name;
+
+    //change current value
+    customer.age=200;
+
+    //all the changes can be done. there is no issue at all
+    //that's why js is known to have dynamic objects
+
+
+
+
+
     //08.Function (Will continue in 08th html file)
+    //we have already reviewed this
+
+
     //09.Null
 
 </script>
