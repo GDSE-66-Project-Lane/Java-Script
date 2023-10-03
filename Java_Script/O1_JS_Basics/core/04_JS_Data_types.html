@@ -110,7 +110,7 @@
     //04.Undefined
     //this type can be found on loose type languages
     var age=100; //age has a type now, it's a number
-    var a;// but a has no data type because a has no assigned value
+   // var a;// but a has no data type because a has no assigned value
     //if we check typeof a, it will be undefined
     //so undefined is a data type which will represent when there
     //is no data type defined for a variable
@@ -142,7 +142,7 @@
         state:false,
         colors:['red','green'],
         printMyName:function(){
-            console.log("My Name is"+this.name);
+            console.log("My Name is "+this.name);
         }
     }
 
@@ -173,6 +173,21 @@
     //that's why js is known to have dynamic objects
 
 
+
+
+    //constructor base
+    function Customer(id,name,address){
+        this.id=id;
+        this.name=name;
+        this.address=address;
+    }
+
+    var c1= new Customer("C001","Dasun","Galle");
+    var c2= new Customer("C002","Lahiru","Galle");
+    //c1 is the object
+
+    console.log(c1);
+    console.log(c2);
 
 
 
