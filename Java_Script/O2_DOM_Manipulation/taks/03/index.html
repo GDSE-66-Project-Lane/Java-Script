@@ -32,8 +32,12 @@
 
 
     startBtn.addEventListener("click",function (){
-        display.innerText=parseInt(display.innerText)+1;
+
+        //let's set a timer
         //should start increment
+        setInterval(function(){
+            display.innerText=parseInt(display.innerText)+1;
+        },100);
 
 
     });
