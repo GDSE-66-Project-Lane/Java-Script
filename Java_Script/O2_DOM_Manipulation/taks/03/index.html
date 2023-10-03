@@ -30,6 +30,8 @@
     let startBtn=document.querySelector("#btnStart");
     let display=document.querySelector("#display");
     let btnStop=document.querySelector("#btnStop");
+    let btnPlus=document.querySelector("#btnIncrement");
+    let btnMinus=document.querySelector("#btnMinus");
     let txt=document.querySelector("#txt");
     let timerID;
 
@@ -48,8 +50,17 @@
 
     btnStop.addEventListener("click",function (){
         clearInterval(timerID);
-    })
-;
+    });
+
+
+    btnPlus.addEventListener("click",function (){
+        display.innerText=parseInt(display.innerText)+1;
+    });
+
+    btnMinus.addEventListener("click",function (){
+        display.innerText=parseInt(display.innerText)-1;
+    });
+
 
 
 </script>
