@@ -50,13 +50,18 @@
     let divs = document.querySelectorAll("section>div");
     //set those colors to the 6 div
 
-    for (let i = 0; i < colors.length; i++) {
-        divs[i].style.background=colors[i];
+    setInterval(processQue,200);
+
+    function processQue() {
+        for (let i = 0; i < colors.length; i++) {
+            divs[i].style.background=colors[i];
+        }
+
+        // remove the last index of an array
+        let lastValue=colors.pop();
+        colors.unshift(lastValue);
     }
 
-    // remove the last index of an array
-    let lastValue=colors.pop();
-    colors.unshift(lastValue);
 
 
 </script>
