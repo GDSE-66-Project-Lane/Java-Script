@@ -452,14 +452,21 @@
 
     var customers=[];
 
+    //save a customer
     btnSave.addEventListener("click",function (){
-        txtID.value;
-        txtName.value;
-        txtAddress.value;
-        txtSalary.value;
-        console.log(txtID.value,txtName.value,txtAddress.value,txtSalary.value);
-
+        //create customer object and fill all the data
+        var customer={
+            id: txtID.value,
+            name:txtName.value,
+            address:txtAddress.value,
+            salary:txtSalary.value
+        }
+        //add customer to object to the array
+        customers.push(customer);
+        console.log(customers);
     });
+
+    //load all customers from the array to the table
 
 
 
