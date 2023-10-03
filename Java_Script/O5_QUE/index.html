@@ -46,13 +46,17 @@
 <script>
 
     //colors (store 6 colors in a array)
-    let colors = ['red', 'green', 'orange', 'yellow', 'deeppink', 'blue'];
+    let colors = ['yellow','deeppink','blue','red', 'green', 'orange'];
     let divs = document.querySelectorAll("section>div");
     //set those colors to the 6 div
 
     for (let i = 0; i < colors.length; i++) {
         divs[i].style.background=colors[i];
     }
+
+    // remove the last index of an array
+    let lastValue=colors.pop();
+    colors.unshift(lastValue);
 
 
 </script>

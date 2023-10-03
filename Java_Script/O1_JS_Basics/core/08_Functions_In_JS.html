@@ -13,14 +13,42 @@
 
 <script>
     //So in JS this is how to write down a function.
+    calculate(10,20);//functional hoisting
+    //means you can call a function before declaring
 
+    function calculate(n1,n2){
+        console.log(n1+n2);
+        console.log("Calculate Function Invoked")
+    }
 
     //So, how to call a function
+    calculate(10,20);
+
+
+    //you can use return statement also
+    function returnOut(number){
+        return number;
+    }
+
+    let a=returnOut(1000);
+    console.log(a);
 
 
     //Two types of function
     //01. Declaration
+    //if a function is with a method signature it's a declaration
+    function generateCode(){
+        console.log("Declaration Type Function");
+    }
+    generateCode();
+
+
     //02. Expressions
+    //if a function is assigned to a variable it's a expression
+    let myAge=function (){
+        return 1000;
+    }
+    myAge();
 
 
 
@@ -28,6 +56,16 @@
 
 
     //what about overloading.?
+    function myName(id,name){
+        console.log("First Method")
+    }
+
+    function myName(id,name,address){
+        console.log("Second Method")
+    }
+
+
+    myName("C001","Dasun");
 </script>
 </body>
 </html>
