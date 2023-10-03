@@ -33,13 +33,16 @@
     let btnPlus=document.querySelector("#btnIncrement");
     let btnMinus=document.querySelector("#btnMinus");
     let txt=document.querySelector("#txt");
-    let timerID;
+    let timerID=0;
+
+
 
     startBtn.addEventListener("click",function (){
-
-       let number= txt.value;//type value in the input field
+        let number= txt.value;//type value in the input field
         display.innerText=number;
 
+        //clear the previous timer before creating a new one
+        clearInterval(timerID);
         //let's set a timer
         timerID=  setInterval(function(){
             //should start increment
