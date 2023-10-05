@@ -125,12 +125,7 @@
                 </thead>
 
                 <tbody id="tblCustomer">
-                <tr>
-                    <td>C001</td>
-                    <td>Dasun</td>
-                    <td>Galle</td>
-                    <td>1000</td>
-                </tr>
+
                 </tbody>
             </table>
         </div>
@@ -522,12 +517,16 @@
 
     //refactor get_all with jQuery
     $("#btnGetAll").click(function () {
-       let row= `<tr>
-            <td>C001</td>
-            <td>Dasun</td>
-            <td>Galle</td>
-            <td>1000</td>
-        </tr>`;
+        for (let i = 0; i < customers.length; i++) {
+            let row = `<tr>
+                            <td>${customers[i].id}</td>
+                            <td>${customers[i].name}</td>
+                            <td>${customers[i].address}</td>
+                            <td>${customers[i].salary}</td>
+                        </tr>`;
+            $("#tblCustomer").append(row);
+        }
+
 
     });
 
