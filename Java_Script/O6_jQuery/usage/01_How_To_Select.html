@@ -5,18 +5,18 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Hello There. Let's use jQuery for DOM manipulations</h1>
-<h2>Hello There</h2>
-<h2>Hello There</h2>
-<h3>Haai</h3>
-<ul>
+<h1 id="h1ID" class="a">Hello There. Let's use jQuery for DOM manipulations</h1>
+<h2 id="h2IDOne" class="a">Hello There</h2>
+<h2 id="h2IDTwo" class="a">Hello There</h2>
+<h3 id="h3ID" class="b">Haai</h3>
+<ul id="ulID" class="b">
     <li>A</li>
     <li>A</li>
     <li>A</li>
     <li>A</li>
 </ul>
 
-<button>Test</button>
+<button id="btn">Test</button>
 
 
 <script>
@@ -38,6 +38,28 @@
     $('h1')//element name;
     //if the content can be selected them the result will be provided
     //inside a jQuery object like -> ce.fn.init[ul, prevObject: ce.fn.init(1)]
+
+
+    //so what we can put inside $('?')
+    //id selectors
+    $("#ulID");//working
+
+    //class selectors
+    $(".a");//working
+
+    //attribute selector
+    $('[id]');//working
+
+    //pseudo classes
+    $('li:nth-child(1)');//working
+
+    //combinators
+    $('ul li');//working
+    $('ul>li');//working
+    $('h1+h2');//working
+    $('h1~h2');//working
+
+
 
 
 </script>
