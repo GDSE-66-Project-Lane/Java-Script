@@ -12,9 +12,9 @@
     </div>
 
     <ul>
-        <li>Hello</li>
-        <li>Hello</li>
-        <li>Changeg color to red</li>
+        <li>Hello</li>: eq0
+        <li>Hello</li> : eq1
+        <li>Change color to red</li> eq:2
     </ul>
 </section>
 
@@ -44,6 +44,17 @@
     $('body').children('section').children('ul');
 
 
+    //change the color of the last list item
+    // body>section>ul>li:last-child
+    $('body').children('section').children('ul').children(':last-child');
+
+    $('body').children('section').children('ul').children(':eq(3)');
+
+    $('body').children('section').children('ul').children(':eq(2)');
+
+    $('body').children('section').children('ul').children().eq(0);
+
+    $('body').children('section').children('ul').children().eq(2);
 </script>
 </body>
 </html>
