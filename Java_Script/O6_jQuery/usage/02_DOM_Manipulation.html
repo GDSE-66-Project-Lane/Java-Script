@@ -5,7 +5,7 @@
     <title>DOM Manipulation with JQuery</title>
     <link rel="stylesheet" href="../asets/css/bootstrap.min.css">
     <style>
-        #con{
+        #con {
             width: 200px;
             height: 200px;
         }
@@ -62,7 +62,7 @@
     //02nd method
     $('#main').css({
         "color": 'red',
-        "font-size":'40px'
+        "font-size": '40px'
     });
 
 
@@ -71,7 +71,6 @@
 
     //so then how to change?
     $('h1').text("jQuery is Awesome.! :-D"); // you can change text like this
-
 
 
     //Then how to get input filed typed values from a text filed.?
@@ -92,27 +91,18 @@
     $('#task').prepend('<li class="list-group-item">A</li>');
 
 
-
     //how to access attributes.?
-    $('img').attr('src');
-    $('img').attr('src','');
+    //so if you want to get an attribute value
+    $('img').attr('src'); //you can call this
+
+    //if you want to change an attribute value
+    $('img').attr('src', ''); // you can pass second param to attr method
 
 
-
-
-
-    $("#btn").click(function(){
-alert('Workking');
+    //how to write down a click method using jQuery
+    $("#btn").click(function () {
+        alert('Workking');
     });
-
-
-
-
-
-
-
-
-
 
 
 </script>
