@@ -13,7 +13,7 @@
 
     <ul>
         <li>Hello : eq0</li>
-        <li>Hello : eq1</li>
+        <li id="b">Hello : eq1</li>
         <li>Change color to red : eq:2</li>
     </ul>
 </section>
@@ -22,7 +22,7 @@
     <li>children()</li>
     <li>children(':nth-child(1)')</li>
     <li>children(':eq(1)')</li>
-    <li>find()</li>
+    <li id="a">find()</li>
     <li>get()</li>
     <li>parent()</li>
     <li>parents()</li>
@@ -60,6 +60,23 @@
         'color':'red',
         'font-size':'30px'
     });
+
+
+
+
+    //will return only one element
+    //always will select the nearest parent of the element
+    $("#b").parent().parent().parent().parent().parent();
+
+
+    //if someone want's to get the parent hierarchy of a element we can use parents method
+    $("#b").parents();
+
+
+    //so here we can traverse up and down using those methods
+    $("#b").parents('section').children('ul');
+
+
 </script>
 </body>
 </html>
