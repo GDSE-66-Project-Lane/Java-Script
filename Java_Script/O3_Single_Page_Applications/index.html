@@ -453,11 +453,7 @@
     // let txtAddress = document.querySelector("#txtCustomerAddress");
     // let txtSalary = document.querySelector("#txtCustomerSalary");
 
-    //temporary db
-    var customers = [
-        {id: "C001", name: "Dasun", address: "Galle", salary: 1000.22},
-        {id: "C002", name: "Iman", address: "Mathara", salary: 2000.22}
-    ];
+
 
     //save a customer
     // btnSave.addEventListener("click", function () {
@@ -493,6 +489,12 @@
     //
     // });
 
+    //temporary db
+    var customers = [
+        {id: "C001", name: "Dasun", address: "Galle", salary: 1000.22},
+        {id: "C002", name: "Iman", address: "Mathara", salary: 2000.22}
+    ];
+
 
     //refactor save with jQuery
     $("#btnCustomer").click(function () {
@@ -521,6 +523,7 @@
         getAllCustomers();
     });
 
+    getAllCustomers();
 
     function getAllCustomers(){
         //remove all the child elements of tbody before adding the table rows
