@@ -9,7 +9,7 @@
 
 
 <section class="container mt-5">
-    <h1>Traversing Methods in Jquery</h1>
+    <h1 id="main">Traversing Methods in Jquery</h1>
     <section class="row">
         <div class="col-3">
             <input class="form-control" type="text" placeholder="input">
@@ -39,12 +39,21 @@
 </section>
 
 
-
-
-
-
-
+<script src="../asets/js/jquery-3.7.1.min.js"></script>
 <script>
+    //how to select with jQuery.?
+    //select h1 from the id and change color and font-size
+
+    // 01st method
+    // $('#main').css('color','red');
+    // $('#main').css('font-size','100px');
+
+    //02nd method
+    $('#main').css({
+        "color": 'red',
+        "font-size":'100px'
+    });
+
 
 </script>
 </body>
