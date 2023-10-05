@@ -22,8 +22,8 @@
             <button id="btn" class="btn btn-danger mt-2">Test</button>
 
         </div>
-        <div class="col-5">
-            <ol class="list-group" id="task">
+        <div class="col-5 overflow-hidden">
+            <ol class="list-group overflow-hidden" id="task">
 
             </ol>
         </div>
@@ -77,7 +77,7 @@
     $('input').val(); // val() method will input field typed value
 
     //if you want to change the input value
-    $('input').val('1000');
+    $('input').val('https://blog.ijse.lk/web/blog/wp-content/uploads/2019/09/1.jpg');
 
 
     //so then how to remove elements.?
@@ -101,8 +101,28 @@
 
     //how to write down a click method using jQuery
     $("#btn").click(function () {
-        alert('Workking');
+        console.log("Working")
     });
+
+
+
+    //Simple Task
+    // ==============
+    //bind an event to the btn
+    //gather input value
+    //add to the ul
+    //then add it to the image src
+
+
+    $("#btn").click(function (){
+        let value=$("input").val();
+        let li=`<li class="list-group-item">${value}</li>`;
+        $('#task').append(li);
+        $("img").attr('src',value);
+
+    });
+
+
 
 
 </script>
