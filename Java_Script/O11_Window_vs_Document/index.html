@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loader</title>
+    <style>
+        #loader {
+            width: 400px;
+            height: 400px;
+            border: 1px solid red;
+        }
+
+        #loader > div {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            background: url("assets/img/loader.gif");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+<h1>Window vs Document</h1>
+<h1>To Test This We want to have some contents out here!</h1>
+<!--So here I added the IJSE site. you know it's going to get so much
+time to load :-D -->
+<iframe src="http://ijse.lk" frameborder="0" width="100%" height="500px"></iframe>
+
+<h2>:-(</h2>
+<h3>Every one will see how our page is loading</h3>
+
+<p>So we have to resolve this by showing a loader while the page is fully loading</p>
+
+<section id="loader">
+    <div></div>
+</section>
+
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script>
+//load
+//DOMContentLoaded
+//window->on->load
+//document->ready
+
+
+
+</script>
+</body>
+</html>
