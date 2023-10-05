@@ -25,7 +25,6 @@
 </script>
 
 
-
 <script src="../asets/js/jquery-3.7.1.min.js"></script>
 
 <script>
@@ -33,6 +32,7 @@
 
     //so in jQuery how to select dom elements.?
     // $('h2')
+
 
     //So in jQuery we can select anything we want by just typing $()
     $('h1')//element name;
@@ -59,7 +59,17 @@
     $('h1+h2');//working
     $('h1~h2');//working
 
+    //what about grouping.?
+    $('h1,h2');
 
+    //universal.?
+    $('*');//working
+
+
+    //if you want to change the default selecting method
+    //you are allowed to do it
+    let RS = jQuery.noConflict();
+    RS('h1');
 
 
 </script>
