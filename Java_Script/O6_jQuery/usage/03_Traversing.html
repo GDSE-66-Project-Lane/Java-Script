@@ -14,6 +14,7 @@
     <ul>
         <li>Hello</li>
         <li>Hello</li>
+        <li>Changeg color to red</li>
     </ul>
 </section>
 
@@ -28,5 +29,21 @@
     <li>eq()</li>
 </ul>
 
+
+<script src="../asets/js/jquery-3.7.1.min.js"></script>
+<script>
+    //will return all the root children of the body
+    $('body').children(); //collection
+
+    //so if you want you can select one like this from the children
+    // body>section
+    $('body').children('section');
+
+    //we can traverse more if we wanted to
+    // body>section>ul
+    $('body').children('section').children('ul');
+
+
+</script>
 </body>
 </html>
