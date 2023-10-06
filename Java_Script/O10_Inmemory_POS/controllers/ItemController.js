@@ -1,3 +1,5 @@
+//Write down all the item form controllers here
+
 //load all existing items
 getAllItems();
 
@@ -26,7 +28,7 @@ function getAllItems() {
         //invoke this method every time
         // we add a row // otherwise click
         //event will not work
-        
+
     }
 }
 

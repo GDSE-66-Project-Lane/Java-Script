@@ -80,6 +80,8 @@ function saveCustomer() {
         //by using this one we can create a new object using
         //the customer model with same properties
         let newCustomer = Object.assign({}, customer);
+
+        //assigning new values for the customer object
         newCustomer.id = customerID;
         newCustomer.name = customerName;
         newCustomer.address = customerAddress;
